@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 import { Providers } from "@/providers/NextUIProviders";
-import { ChildType } from "@/types";
-import { inter } from "@/assets/fonts";
+import { ChildType } from "@/shares/types";
+import { inter } from "@/shares/assets/fonts";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
