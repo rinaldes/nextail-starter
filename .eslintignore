@@ -1,14 +1,4 @@
 .build
-.coverage
-.dist
-.esm/*
 .next
 .next/*
 .node_modules
-.public/*
-.scripts/*
-.tests/*
-*.config.*
-*.css
-*.stories.*
-*.test.*
