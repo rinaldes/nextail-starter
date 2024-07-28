@@ -1,0 +1,8 @@
+.build
+.dist
+.next
+*.yaml
+*.json
+*.config.*
+node_modules
+scripts

@@ -1,0 +1,78 @@
+echo '👠💅💋 Glam squad in action! Let’s style, test, and build this masterpiece before committing.'
+echo ' '
+echo '✨💄 Checking your styling with Prettier! Let’s see if you’ve got that glam touch! ✨💄'
+echo ' '
+
+# Check Prettier standards
+pnpm check-format ||
+(
+    echo ' '
+    echo '😱🛑👑 Oh honey, no! 😱🛑👑 
+          That styling is a hot mess! 💄💅 Fix it with pnpm format, add your changes, and try again.';
+    echo ' '
+    false;
+)
+
+echo ' '
+echo '🧐🔍📝 Time for the ESLint inspection! Let’s see if your code can strut down the runway! 🧐🔍📝'
+echo ' '
+
+# Check ESLint Standards
+pnpm lint ||
+(
+    echo ' '
+    echo '🛑🚫❌ Ugh, darling, really? 🛑🚫❌ 
+          That code is giving me major cringe. 😬 Fix those lint errors and come back looking fabulous!';
+    echo ' '
+    false;
+)
+
+echo ' '
+echo '📚🎓📏 Quick type check! Show me those types are sharp! 📚🎓📏'
+echo ' '
+
+# Check tsconfig standards
+pnpm check-types ||
+(
+    echo ' '
+    echo '🙅‍♀️🧐📉 Type check failed, sweetie! 🙅‍♀️🧐📉 
+          What were you thinking? Go make it right, darling!';
+    echo ' '
+    false;
+)
+
+echo ' '
+echo '🎬🌟✨ Showtime! Let’s run those tests! 🎬🌟✨'
+echo ' '
+
+# Check jest tests
+pnpm check-test ||
+(
+    echo ' '
+    echo '😩🤦‍♀️😭 Test disaster! 😩🤦‍♀️😭 
+          Your tests flopped harder than my soufflé. Get it together, gorgeous!';
+    echo ' '
+    false;
+)
+
+# Try Build
+echo ' '
+echo '🎉🎉🎉 Bravo, darling! 🎉🎉🎉 All tests passed! Moving on to the final check...'
+echo ' '
+echo '🏗️🔧🚀 Time to build this beauty! 🏗️🔧🚀'
+echo ' '
+
+pnpm build ||
+(
+    echo ' '
+    echo '💥🔧🔨 Total build catastrophe! 💥🔧🔨 
+          Your build failed like a diva’s broken nail. Check the errors and fix it, love!';
+    echo ' '
+    false;
+)
+
+# If everything passes... Now we can commit
+echo ' '
+echo '💖💖💖 Fabulous darling! 💖💖💖 
+      Everything looks flawless, committing now. You’re a superstar!';
+echo ' '
