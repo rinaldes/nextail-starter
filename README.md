@@ -4,12 +4,11 @@ This is a starter project for all of my future Next.js projects. It comes pre-co
 
 ## Getting Started
 
-First, clone the repository and install the dependencies:
+First, create a new project with this repository:
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
-pnpm install
+pnpm create next-app --example https://github.com/rinaldes/nextail-starter {app_name}
+cd {app_name}
 ```
 
 Then, run the development server:
