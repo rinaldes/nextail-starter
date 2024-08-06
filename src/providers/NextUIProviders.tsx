@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { NextUIProvider } from "@nextui-org/react";
+import { NextUIProvider } from "@nextui-org/system";
 
 import { ChildType } from "@/shares/types";
 
